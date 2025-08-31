@@ -38,6 +38,9 @@ def apply_dark_style(root: tk.Tk) -> ttk.Style:
     style.configure("Treeview", background=PANEL_BG, fieldbackground=PANEL_BG, foreground=FG, bordercolor=BORDER)
     style.map("Treeview", background=[("selected", MUTED)])
 
+    style.configure("Treeview.Heading", background=PANEL_BG, foreground=SUB_FG, bordercolor=BORDER)
+    style.map("Treeview.Heading", background=[("active", MUTED)])
+
     style.configure("TEntry", fieldbackground=PANEL_BG, insertcolor=FG, foreground=FG)
     style.configure("TCombobox", fieldbackground=PANEL_BG)
     style.configure("TSeparator", background=BORDER)
